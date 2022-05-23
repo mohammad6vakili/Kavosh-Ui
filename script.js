@@ -1,29 +1,14 @@
-$('.carousel').carousel({
-    interval: 6000
-  })
-
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  effect: "fade",
-  loop: true,
-  speed: 1200,
-  autoplay: {
-    delay: 6000,
-  },
-
-  // If we need pagination
+  slidesPerView: 4,
+  spaceBetween: 30,
+  slidesPerGroup: 4,
+  loopFillGroupWithBlank: true,
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
+    clickable: true,
   },
-
-  // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
