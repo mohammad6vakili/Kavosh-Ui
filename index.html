@@ -13,8 +13,24 @@
     <title>رایان پردازش کاوش</title>
   </head>
   <body>
+    <!-- -------------------------------hamburger menu----------------------------- -->
+    <div id="hamMenu" class="ham-menu">
+      <img src="/images/logo.png" alt="kavosh logo">
+      <div>
+        <a class="header-link" href="#">محصولات</a>
+        <a class="header-link" href="#">خدمات</a>
+        <a class="header-link" href="#">آموزش و مشاوره</a>
+        <a class="header-link" href="#">تکنولوژی ها</a>
+        <a class="header-link" href="#">معرفی مشتریان</a>
+        <a class="header-link" href="#"> فرصت های شغلی </a>
+        <a class="header-link" href="#"> بلاگ </a>
+        <a class="header-link" href="#"> درباره ما </a>
+        <a class="header-link" href="#"> تماس با ما </a>
+      </div>
+      <button>شروع همکاری با کاوش</button>
+    </div>
     <!-- -------------------------------header----------------------------- -->
-    <header class="header">
+    <header id="header" class="header">
       <!-- header top  -->
       <div>
         <div>
@@ -45,11 +61,14 @@
         <div>
           <button>شروع همکاری با کاوش</button>
         </div>
+        <div>
+          <button id="hamButton"><img src="/images/ham.svg" alt="mobile menu"></button>
+        </div>
       </div>
     </header>
 
     <!-- --------------------------------body------------------------------ -->
-    <main class="main">
+    <main id="main" class="main">
       <!-- -----------section one----------- -->
       <div class="main-section-one">
         <div>
@@ -389,7 +408,7 @@
     </main>
 
     <!-- ------------------------------footer------------------------------ -->
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <!-- section one -->
       <div>
         <a class="header-link" href="#"> فرصت های شغلی </a>
@@ -447,8 +466,14 @@
       </div>
       <!-- section four -->
       <div>
-        <div></div>
-        <div></div>
+        <div>
+          <button id="backToTop"><img src="/images/topArrow.png" alt="top to kavosh"></button>
+          <span>برگشت به بالا</span>
+        </div>
+        <div>
+          <input type="text" placeholder="ایمیل خود را وارد کنید">
+          <button>عضویت در خبرنامه</button>
+        </div>
         <div>
           <a href="#">
             <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
