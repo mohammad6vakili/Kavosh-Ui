@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
@@ -15,24 +19,23 @@
   <body>
     <!-- -------------------------------hamburger menu----------------------------- -->
     <div id="hamMenu" class="ham-menu">
-      <img src="/images/logo.png" alt="kavosh logo">
       <div>
-        <a class="header-link" href="#">محصولات</a>
-        <a class="header-link" href="#">خدمات</a>
-        <a class="header-link" href="#">آموزش و مشاوره</a>
-        <a class="header-link" href="#">تکنولوژی ها</a>
-        <a class="header-link" href="#">معرفی مشتریان</a>
+        <a class="header-link" href="#products">محصولات</a>
+        <a class="header-link" href="#services">خدمات</a>
+        <a class="header-link" href="#consulting">آموزش و مشاوره</a>
+        <a class="header-link" href="#techs">تکنولوژی ها</a>
+        <a class="header-link" href="#customers">معرفی مشتریان</a>
         <a class="header-link" href="#"> فرصت های شغلی </a>
         <a class="header-link" href="#"> بلاگ </a>
         <a class="header-link" href="#"> درباره ما </a>
-        <a class="header-link" href="#"> تماس با ما </a>
+        <a class="header-link" href="#contact"> تماس با ما </a>
       </div>
       <button>شروع همکاری با کاوش</button>
     </div>
     <!-- -------------------------------header----------------------------- -->
-    <header id="header" class="header">
+    <header id="header" class="header animate__animated animate__fadeInDown">
       <!-- header top  -->
-      <div>
+      <div id="headerTop">
         <div>
           <a href="#">
             گزارش کامل رویدادها و اخبار رایان پرداز کاوش را ببینید
@@ -43,20 +46,20 @@
           <a class="header-link" href="#"> فرصت های شغلی </a>
           <a class="header-link" href="#"> بلاگ </a>
           <a class="header-link" href="#"> درباره ما </a>
-          <a class="header-link" href="#"> تماس با ما </a>
+          <a class="header-link" href="#contact"> تماس با ما </a>
         </div>
       </div>
       <!-- header bottom  -->
       <div>
         <div>
-          <img src="images/logo.png" alt="logo" />
+          <img id="kavoshLogo" class="animate__animated animate__fadeInRight animate__delay-1s" src="images/realLogo.jpg" alt="logo" />
         </div>
         <div>
-          <a class="header-link" href="#">محصولات</a>
-          <a class="header-link" href="#">خدمات</a>
-          <a class="header-link" href="#">آموزش و مشاوره</a>
-          <a class="header-link" href="#">تکنولوژی ها</a>
-          <a class="header-link" href="#">معرفی مشتریان</a>
+          <a class="header-link" href="#products">محصولات</a>
+          <a class="header-link" href="#services">خدمات</a>
+          <a class="header-link" href="#consulting">آموزش و مشاوره</a>
+          <a class="header-link" href="#techs">تکنولوژی ها</a>
+          <a class="header-link" href="#customers">معرفی مشتریان</a>
         </div>
         <div>
           <button>شروع همکاری با کاوش</button>
@@ -70,7 +73,7 @@
     <!-- --------------------------------body------------------------------ -->
     <main id="main" class="main">
       <!-- -----------section one----------- -->
-      <div class="main-section-one">
+      <div class="main-section-one animate__animated animate__fadeInUp">
         <div>
           <div>رایان پرداز کاوش</div>
           <div>بیش از دو دهه سابقه در زمینه تولید نرم افزار</div>
@@ -96,31 +99,33 @@
         </div>
         <div>
           <div>چرا رایان پرداز کاوش؟</div>
-          <span
-            >داشتن بیش از دو دهه سابقه در زمینه تولید نرم افزار های سفارش مشتری
-            و سامانه های اداری</span
-          >
-          <span
-            >تجارت گرانبها در پروژه های تولیدی، توسعه، نصب و راه اندازی،
-            پشتیبانی و راهبری، و مشاوره های تخصصی</span
-          >
-          <span>قیمت مناسب محصولات و خدمات</span>
-          <span>به کارگیری ابزار هوشمند و توسه یافته مختص شرکت</span>
-          <span>استفاده از جدیدترین فناوری های حوزه آی تی و نرم افزار</span>
-          <span>تیم قوی حرفه ای و با تجربه در حوزه نرم افزار و آی تی</span>
-          <span>تیم توانمند مدیریتی و حسابداری</span>
-          <span>واحد منابع انسانی توانمند</span>
-          <span>مشتریان بزرگ بانکی، نهادها، سازمان های دولتی و غیر دولتی</span>
-          <span>پاسخگویی تمامی نیازهای نرم افزاری در کوتاهترین زمان ممکن</span>
-          <span
-            >پایش مستمر سامانه های نرم افزاری ارائه شده در صورت تمایل
-            مشتریان</span
-          >
+          <ul>
+            <li
+              >داشتن بیش از دو دهه سابقه در زمینه تولید نرم افزار های سفارش مشتری
+              و سامانه های اداری</li
+            >
+            <li
+              >تجارت گرانبها در پروژه های تولیدی، توسعه، نصب و راه اندازی،
+              پشتیبانی و راهبری، و مشاوره های تخصصی</li
+            >
+            <li>قیمت مناسب محصولات و خدمات</li>
+            <li>به کارگیری ابزار هوشمند و توسه یافته مختص شرکت</li>
+            <li>استفاده از جدیدترین فناوری های حوزه آی تی و نرم افزار</li>
+            <li>تیم قوی حرفه ای و با تجربه در حوزه نرم افزار و آی تی</li>
+            <li>تیم توانمند مدیریتی و حسابداری</li>
+            <li>واحد منابع انسانی توانمند</li>
+            <li>مشتریان بزرگ بانکی، نهادها، سازمان های دولتی و غیر دولتی</li>
+            <li>پاسخگویی تمامی نیازهای نرم افزاری در کوتاهترین زمان ممکن</li>
+            <li
+              >پایش مستمر سامانه های نرم افزاری ارائه شده در صورت تمایل
+              مشتریان</li
+            >
+          </ul>
         </div>
       </div>
 
       <!-- -----------section three----------- -->
-      <div class="main-section-three">
+      <div id="products" class="main-section-three">
         <div>محصولات رایان پردازش کاوش</div>
         <div>
           <div class="swiper mySwiper">
@@ -228,7 +233,7 @@
       </div>
 
       <!-- -----------section five----------- -->
-      <div class="main-section-five">
+      <div id="services" class="main-section-five">
         <div>خدمات رایان پردازش کاوش</div>
         <div>
           <div>
@@ -258,7 +263,7 @@
       </div>
 
       <!-- -------------section six-------------- -->
-      <div class="main-section-six">
+      <div id="consulting" class="main-section-six">
         <div>به راحتی از ما آموزش و مشاوره دریافت کنید</div>
         <div>
           <div>
@@ -277,7 +282,7 @@
       </div>
 
       <!-- -------------section seven-------------- -->
-      <div class="main-section-seven">
+      <div id="techs" class="main-section-seven">
         <div>تکنولوژی های مورد استفاده در رایان پردازش کاوش</div>
         <div>
           <div class="swiper mySwiper techSwiper">
@@ -320,7 +325,7 @@
       </div>
 
        <!-- -------------section eight-------------- -->
-       <div class="main-section-eight">
+       <div id="customers" class="main-section-eight">
         <div>
           <span>کسب و کارهایی که به ما اعتماد کرده اند</span>
           <span>بیش از ۴۰ مجموعه ی بزرگ و کوچک در ایران به رایان پردازش کاوش اطمینان کرده اند</span>
@@ -370,10 +375,12 @@
           <div>
             <img src="/images/history-circle.png" alt="kavosh history">
             <div>۲۰ سال فعالیت با افتخار</div>
-            <div>۱۳۸۱ متولد شدیم : رایان پرداز کاوش با تیمی متشکل از دانش آموختگان دانشگاه تهران</div>
-            <div>۱۳۸۵ تولید اولین محصول : با تولید سامانه ... به دنیای محصولات نرم افزاری گام نهادیم</div>
-            <div>۱۳۸۶ با ... به میان شما آمدیم : برای اولین بار با محصول ... که در بستر و وب پیاده سازی شده بود و با نام تجاری ... تولید و روانه بازار نرم افزار شد. </div>
-            <div>مرهون اعتماد شما، پرتوان برای نیازمندیهای شما و دلگرم به رضایت شما هستیم</div>
+            <ul>
+            <li>۱۳۸۱ متولد شدیم : رایان پرداز کاوش با تیمی متشکل از دانش آموختگان دانشگاه تهران</li>
+            <li>۱۳۸۵ تولید اولین محصول : با تولید سامانه ... به دنیای محصولات نرم افزاری گام نهادیم</li>
+            <li>۱۳۸۶ با ... به میان شما آمدیم : برای اولین بار با محصول ... که در بستر و وب پیاده سازی شده بود و با نام تجاری ... تولید و روانه بازار نرم افزار شد. </li>
+            <li>مرهون اعتماد شما، پرتوان برای نیازمندیهای شما و دلگرم به رضایت شما هستیم</li>
+          </ul>
           </div>
           <div>
             <img src="/images/history-image.png" alt="kavosh history">
@@ -381,7 +388,7 @@
        </div>
 
        <!-- -------------section ten-------------- -->
-       <div class="main-section-ten">
+       <div id="contact" class="main-section-ten">
         <div>
           <img src="/images/contact-image.png" alt="contact kavosh">
           <div>با ارسال یادداشت برای کاوش میتوانید به راحتی با ما در ارتباط باشید و مشاوره دریافت کنید.</div>

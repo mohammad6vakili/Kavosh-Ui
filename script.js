@@ -1,3 +1,5 @@
+let isHamOpen = false;
+
 const swiper = new Swiper(".swiper", {
   slidesPerView: 4,
   spaceBetween: 30,
@@ -67,14 +69,34 @@ document.getElementById("backToTop").addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
+document.getElementById("kavoshLogo").addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
 document.getElementById("hamButton").addEventListener("click", () => {
-  document.getElementById("hamMenu").classList.add("hamOpen");
+  if (isHamOpen === false) {
+    document.getElementById("hamMenu").classList.add("hamOpen");
+    isHamOpen = true;
+  } else {
+    document.getElementById("hamMenu").classList.remove("hamOpen");
+    isHamOpen = false;
+  }
 });
 
 document.getElementById("main").addEventListener("click", () => {
   document.getElementById("hamMenu").classList.remove("hamOpen");
+  isHamOpen = false;
 });
 
 document.getElementById("footer").addEventListener("click", () => {
   document.getElementById("hamMenu").classList.remove("hamOpen");
+  isHamOpen = false;
+});
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    document.getElementById("headerTop").classList.add("header-in-scroll");
+  } else if (window.scrollY < 50) {
+    document.getElementById("headerTop").classList.remove("header-in-scroll");
+  }
 });
