@@ -1,11 +1,11 @@
 /* ---------------------------------------------------- globals ------------------------------------------------------*/
 @font-face {
   font-family: IranSans;
-  src: url("/fonts/IRANSansWeb.ttf");
+  src: url("/IRANSansWeb.ttf");
 }
 @font-face {
   font-family: IranSansBold;
-  src: url("/fonts/IRANSansWeb_Bold.ttf");
+  src: url("/IRANSansWeb_Bold.ttf");
 }
 * {
   padding: 0;
@@ -65,7 +65,7 @@ body {
   width: 100%;
   min-height: 50px;
   border-radius: 15px;
-  background-color: #ED7D23;
+  background-color: #ed7d23;
   color: white;
   border: none !important;
 }
@@ -124,7 +124,7 @@ body {
   font-size: 16px;
 }
 .header > div:nth-child(2) button {
-  background-color: #ED7D23;
+  background-color: #ed7d23;
   color: white;
   border: none;
   cursor: pointer;
@@ -135,7 +135,7 @@ body {
 }
 .header > div:nth-child(2) button:hover {
   background-color: white;
-  color: #ED7D23;
+  color: #ed7d23;
   border: 1px solid #ed7d23;
 }
 .header-link {
@@ -150,14 +150,14 @@ body {
 .header > div:nth-child(2) > div:nth-child(4) {
   display: none !important;
 }
-@media only screen and (min-width:1600px){
+@media only screen and (min-width: 1600px) {
   .header > div:nth-child(1) {
-    border-bottom:1px solid rgba(182, 182, 182, 0.511);
+    border-bottom: 1px solid rgba(182, 182, 182, 0.511);
     background-color: white;
   }
 }
-@media only screen and (min-width:1000px){
-  .header-in-scroll{
+@media only screen and (min-width: 1000px) {
+  .header-in-scroll {
     display: none !important;
   }
 }
@@ -222,7 +222,7 @@ body {
 .main-section-one > div:nth-child(1) {
   width: 60%;
   border-radius: 0 0 0 20px;
-  background-color: #ED7D23;
+  background-color: #ed7d23;
   color: white;
   flex-direction: column;
   justify-content: center;
@@ -244,7 +244,7 @@ body {
 }
 .main-section-one > div:nth-child(1) > div:nth-child(4) > button {
   background-color: white;
-  color: #ED7D23;
+  color: #ed7d23;
   border: none;
   cursor: pointer;
   height: 50px;
@@ -254,7 +254,7 @@ body {
   transition: 0.25s;
 }
 .main-section-one > div:nth-child(1) > div:nth-child(4) > button:hover {
-  background-color: #ED7D23 !important;
+  background-color: #ed7d23 !important;
   color: white !important;
   border: 2px solid white !important;
 }
@@ -438,7 +438,7 @@ body {
   z-index: -1;
   bottom: 0;
   position: absolute;
-  background: #ED7D23;
+  background: #ed7d23;
   border-radius: 20px;
 }
 .swiper {
@@ -781,7 +781,7 @@ body {
   }
 }
 @media only screen and (max-width: 430px) {
-  .main-section-seven{
+  .main-section-seven {
     margin-top: 15px !important;
   }
   .main-section-seven > div:nth-child(1) {
@@ -832,7 +832,7 @@ body {
   }
 }
 @media only screen and (max-width: 430px) {
-  .main-section-eight{
+  .main-section-eight {
     margin-top: 15px !important;
   }
   .main-section-eight > div:nth-child(1) > span:nth-child(1) {
@@ -903,7 +903,7 @@ body {
   }
 }
 @media only screen and (max-width: 460px) {
-  .main-section-nine > div:nth-child(2){
+  .main-section-nine > div:nth-child(2) {
     margin-bottom: 160px;
   }
   .main-section-nine > div:nth-child(2) > img {
@@ -913,13 +913,13 @@ body {
   }
 }
 @media only screen and (max-width: 430px) {
-  .main-section-nine{
+  .main-section-nine {
     margin-bottom: 0 !important;
   }
   .main-section-nine > div > div:nth-child(2) {
     font-size: 26px;
   }
-  .main-section-nine > div > ul> li{
+  .main-section-nine > div > ul > li {
     font-size: 14px;
   }
 }
@@ -989,10 +989,10 @@ body {
   padding: 0 10px;
   height: 50px;
   margin-top: 5px;
-  transition: .3s;
+  transition: 0.3s;
 }
 .form-field-mv > input:focus {
-  border: 1px solid #ED7D23 !important;
+  border: 1px solid #ed7d23 !important;
   box-shadow: 0.5px 4px 10px rgba(236, 131, 44, 0.35);
 }
 .filed-mv-last > input {
@@ -1013,9 +1013,9 @@ body {
   transition: 0.25s;
 }
 .main-section-ten > div button:hover {
-  color: #ED7D23 !important;
+  color: #ed7d23 !important;
   background-color: white !important;
-  border: 1.5px solid #ED7D23 !important;
+  border: 1.5px solid #ed7d23 !important;
 }
 @media only screen and (max-width: 1300px) {
   .main-section-ten > div:nth-child(1) {
@@ -1043,7 +1043,7 @@ body {
   }
 }
 @media only screen and (max-width: 460px) {
-  .main-section-ten{
+  .main-section-ten {
     margin: 40px 0 !important;
   }
   .main-section-ten > div:nth-child(2) > div {
@@ -1123,7 +1123,7 @@ body {
   color: #6d6d6d;
 }
 .footer > div:nth-child(2) > div > a:hover {
-  color: #ED7D23;
+  color: #ed7d23;
 }
 /*---------------section three----------------- */
 .footer > div:nth-child(3) {
