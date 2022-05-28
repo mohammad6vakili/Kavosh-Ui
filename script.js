@@ -5,9 +5,6 @@ const swiper = new Swiper(".swiper", {
   spaceBetween: 30,
   slidesPerGroup: 4,
   loopFillGroupWithBlank: true,
-  autoplay: {
-    delay: 2000,
-  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -37,6 +34,9 @@ const techSwiper = new Swiper(".techSwiper", {
   spaceBetween: 30,
   slidesPerGroup: 5,
   loopFillGroupWithBlank: true,
+  autoplay: {
+    delay: 2000,
+  },
   breakpoints: {
     1200: {
       slidesPerView: 5,
