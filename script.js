@@ -65,21 +65,6 @@ const techSwiper = new Swiper(".techSwiper", {
   },
 });
 
-mapboxgl.accessToken =
-  "pk.eyJ1IjoibW9oYW1tYWQtdmFhIiwiYSI6ImNsM3I5bGNpeDBrMTEzZHFvNGwyMjRrbjAifQ.FqD0QXzgfQ8q29aDQQzljw";
-mapboxgl.setRTLTextPlugin(
-  "https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.3/mapbox-gl-rtl-text.js",
-  null,
-  true
-);
-const map = new mapboxgl.Map({
-  container: "map",
-  style: "mapbox://styles/mapbox/streets-v11",
-  center: [51.4201, 35.7248],
-  zoom: 14,
-});
-const marker = new mapboxgl.Marker().setLngLat([51.4201, 35.7248]).addTo(map);
-
 document.getElementById("backToTop").addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
@@ -96,6 +81,11 @@ document.getElementById("hamButton").addEventListener("click", () => {
     document.getElementById("hamMenu").classList.remove("hamOpen");
     isHamOpen = false;
   }
+});
+
+document.getElementById("about").addEventListener("click", () => {
+  document.getElementById("hamMenu").classList.remove("hamOpen");
+  isHamOpen = false;
 });
 
 window.addEventListener("scroll", () => {
@@ -115,3 +105,18 @@ document.getElementById("footer").addEventListener("click", () => {
   document.getElementById("hamMenu").classList.remove("hamOpen");
   isHamOpen = false;
 });
+
+mapboxgl.accessToken =
+  "pk.eyJ1IjoibW9oYW1tYWQtdmFhIiwiYSI6ImNsM3I5bGNpeDBrMTEzZHFvNGwyMjRrbjAifQ.FqD0QXzgfQ8q29aDQQzljw";
+mapboxgl.setRTLTextPlugin(
+  "https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.3/mapbox-gl-rtl-text.js",
+  null,
+  true
+);
+const map = new mapboxgl.Map({
+  container: "map",
+  style: "mapbox://styles/mapbox/streets-v11",
+  center: [51.4201, 35.7248],
+  zoom: 14,
+});
+const marker = new mapboxgl.Marker().setLngLat([51.4201, 35.7248]).addTo(map);
