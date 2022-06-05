@@ -132,7 +132,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div style="background: #ee964f">
-                  <img src="/images/product-1.svg" alt="kavoush products" />
+                  <img src="/images/productImage.jpg" alt="kavoush products" />
                 </div>
                 <div>سامانه جامع اعتبارات بانکی</div>
                 <div>
@@ -146,7 +146,7 @@
               </div>
               <div class="swiper-slide">
                 <div style="background: #e5c16e">
-                  <img src="/images/product-2.svg" alt="kavoush products" />
+                  <img src="/images/productImage.jpg" alt="kavoush products" />
                 </div>
                 <div>سامانه جامع و یکپارچه تدارکات بانکی</div>
                 <div>
@@ -157,7 +157,7 @@
               </div>
               <div class="swiper-slide">
                 <div style="background: #adc648">
-                  <img src="/images/product-3.svg" alt="kavoush products" />
+                  <img src="/images/productImage.jpg" alt="kavoush products" />
                 </div>
                 <div>سیستم جامع اداری</div>
                 <div>
@@ -167,7 +167,7 @@
               </div>
               <div class="swiper-slide">
                 <div style="background: #f8d35b">
-                  <img src="/images/product-4.svg" alt="kavoush products" />
+                  <img src="/images/productImage.jpg" alt="kavoush products" />
                 </div>
                 <div>سیستم پرسنلی</div>
                 <div>
@@ -177,7 +177,7 @@
               </div>
               <div class="swiper-slide">
                 <div style="background: #ee964f">
-                  <img src="/images/product-1.svg" alt="kavoush products" />
+                  <img src="/images/productImage.jpg" alt="kavoush products" />
                 </div>
                 <div>سامانه جامع اعتبارات بانکی</div>
                 <div>
@@ -188,7 +188,7 @@
               </div>
               <div class="swiper-slide">
                 <div style="background: #e5c16e">
-                  <img src="/images/product-2.svg" alt="kavoush products" />
+                  <img src="/images/productImage.jpg" alt="kavoush products" />
                 </div>
                 <div>سامانه جامع و یکپارچه تدارکات بانکی</div>
                 <div>
@@ -199,7 +199,7 @@
               </div>
               <div class="swiper-slide">
                 <div style="background: #adc648">
-                  <img src="/images/product-3.svg" alt="kavoush products" />
+                  <img src="/images/productImage.jpg" alt="kavoush products" />
                 </div>
                 <div>سیستم جامع اداری</div>
                 <div>
@@ -209,7 +209,7 @@
               </div>
               <div class="swiper-slide">
                 <div style="background: #f8d35b">
-                  <img src="/images/product-4.svg" alt="kavoush products" />
+                  <img src="/images/productImage.jpg" alt="kavoush products" />
                 </div>
                 <div>سیستم پرسنلی</div>
                 <div>
@@ -523,5 +523,12 @@
   <script src="/Wow.min.js"></script>
   <script>
     new WOW().init();
+    window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    document.getElementById("headerTop").classList.add("header-in-scroll");
+  } else if (window.scrollY < 50) {
+    document.getElementById("headerTop").classList.remove("header-in-scroll");
+  }
+});
     </script>
 </html>

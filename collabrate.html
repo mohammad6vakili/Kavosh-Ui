@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link
-      href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css"
       rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
     <link rel="stylesheet" href="/style.css" />
-    <title>درباره ی رایان پردازش کاوش</title>
+    <title>رایان پردازش کاوش</title>
   </head>
   <body>
     <!-- -------------------------------hamburger menu----------------------------- -->
@@ -77,151 +77,90 @@
       </div>
     </header>
 
-    <!-- ----------------------------------------about---------------------------------------------- -->
-    <main id="about" class="about">
-      <!-- ---------------section one--------------- -->
-      <div class="about-section-one">
-        <div class="animate__animated animate__fadeInRight wow">
-          <div>درباره رایان پردازش کاوش</div>
-          <div>۲۰ سال فعالیت با افتخار</div>
-          <div>
-            <div>
-              ۱۳۸۱ متولد شدیم : رایان پرداز کاوش با تیمی متشکل از دانش آموختگان
-              دانشگاه تهران
+    <!-- -------------------------------collabrate----------------------------- -->
+    <div class="collabrate">
+      <form method="post" role="form" class="collabrate-container">
+        <div class="animate__animated animate__fadeIn">
+          همکاری با رایان پردازش کاوش
+        </div>
+        <div class="animate__animated animate__fadeIn">
+          لطفا برای همکاری با کاوش اطلاعات زیر را تکمیل کنید و برای ما ارسال
+          کنید.
+        </div>
+        <!-- personal section -->
+        <div
+          class="collabrate-feilds-wrapper wow animate__animated animate__fadeInUp"
+        >
+          <div class="collabrate-feilds-wrapper-label"></div>
+          <div class="collabrate-feilds-wrapper-title">اطلاعات فردی</div>
+          <div class="collabrate-fileds-container">
+            <!-- name -->
+            <div class="collabrate-form-field collabrate-form-field-50">
+              <span>نام و نام خانوادگی</span>
+              <input id="colName" name="colName" required type="text" />
             </div>
-            <div>
-              ۱۳۸۵ تولید اولین محصول : با تولید سامانه ... به دنیای محصولات نرم
-              افزاری گام نهادیم
+            <!-- number -->
+            <div class="collabrate-form-field collabrate-form-field-50">
+              <span>تلفن</span>
+              <input id="colNumber" name="colNumber" required type="tel" />
             </div>
-            <div>
-              ۱۳۸۶ با ... به میان شما آمدیم : برای اولین بار با محصول ... که در
-              بستر و وب پیاده سازی شده بود و با نام تجاری ... تولید و روانه
-              بازار نرم افزار شد.
-            </div>
-            <div>
-              مرهون اعتماد شما، پرتوان برای نیازمندیهای شما و دلگرم به رضایت شما
-              هستیم
+            <!-- email -->
+            <div class="collabrate-form-field collabrate-form-field-50">
+              <span>ایمیل</span>
+              <input id="colEmail" name="colEmail" required type="email" />
             </div>
           </div>
         </div>
-        <div class="animate__animated animate__bounceIn wow">
-          <img src="/images/aboutTop.png" alt="about kavosh" />
-        </div>
-      </div>
 
-      <!-- ---------------section one--------------- -->
-      <div class="about-section-two">
-        <div class="wow animate__animated animate__fadeInDown">
-          تیم رایان پردازش کاوش
-        </div>
-        <div>
-          <div class="wow animate__animated animate__fadeIn">
-            <div><img src="/images/avatar.png" alt="avatar" /></div>
-            <div>سمانه رضایی</div>
-            <div>مدیر محصول</div>
-          </div>
-          <div
-            class="wow animate__animated animate__fadeIn"
-            data-wow-delay=".5s"
-          >
-            <div><img src="/images/avatar.png" alt="avatar" /></div>
-            <div>سمانه رضایی</div>
-            <div>مدیر محصول</div>
-          </div>
-          <div
-            class="wow animate__animated animate__fadeIn"
-            data-wow-delay="1s"
-          >
-            <div><img src="/images/avatar.png" alt="avatar" /></div>
-            <div>سمانه رضایی</div>
-            <div>مدیر محصول</div>
-          </div>
-          <div
-            class="wow animate__animated animate__fadeIn"
-            data-wow-delay="1.5s"
-          >
-            <div><img src="/images/avatar.png" alt="avatar" /></div>
-            <div>سمانه رضایی</div>
-            <div>مدیر محصول</div>
-          </div>
-          <div
-            class="wow animate__animated animate__fadeIn"
-            data-wow-delay="2s"
-          >
-            <div><img src="/images/avatar.png" alt="avatar" /></div>
-            <div>سمانه رضایی</div>
-            <div>مدیر محصول</div>
-          </div>
-          <div
-            class="wow animate__animated animate__fadeIn"
-            data-wow-delay="2.5s"
-          >
-            <div><img src="/images/avatar.png" alt="avatar" /></div>
-            <div>سمانه رضایی</div>
-            <div>مدیر محصول</div>
-          </div>
-          <div
-            class="wow animate__animated animate__fadeIn"
-            data-wow-delay="3s"
-          >
-            <div><img src="/images/avatar.png" alt="avatar" /></div>
-            <div>سمانه رضایی</div>
-            <div>مدیر محصول</div>
-          </div>
-          <div
-            class="wow animate__animated animate__fadeIn"
-            data-wow-delay="3.5s"
-          >
-            <div><img src="/images/avatar.png" alt="avatar" /></div>
-            <div>سمانه رضایی</div>
-            <div>مدیر محصول</div>
+        <!-- file upload section -->
+        <div
+          class="collabrate-feilds-wrapper wow animate__animated animate__fadeInUp"
+        >
+          <div class="collabrate-feilds-wrapper-label"></div>
+          <div class="collabrate-feilds-wrapper-title">بارگذاری مدارک</div>
+          <div class="collabrate-fileds-container">
+            <!-- file -->
+            <div class="collabrate-form-field collabrate-form-field-50">
+              <span>مدارک</span>
+              <label id="fileContainer">
+                <label for="fusk" id="uploadFileButton" type="button"
+                  >انتخاب فایل مدرک</label
+                >
+              </label>
+              <span>حداکثر حجم مجاز فایل ۵ مگابایت است</span>
+              <input id="fusk" type="file" name="fusk" style="display: none" />
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- ---------------section one--------------- -->
-      <div class="about-section-three">
-        <img src="/images/services-bg.svg" alt="background" />
-        <div class="about-contact-bg-right"></div>
-        <a href="#mapTitle">
-          <div>
-            <img src="/images/location-icon.svg" alt="address" />
+        <!-- description -->
+        <div
+          class="collabrate-feilds-wrapper wow animate__animated animate__fadeInUp"
+        >
+          <div class="collabrate-feilds-wrapper-label"></div>
+          <div class="collabrate-feilds-wrapper-title">توضیحات تکمیلی</div>
+          <div class="collabrate-fileds-container">
+            <!-- desc -->
+            <div class="collabrate-form-field collabrate-form-field-100">
+              <span>توضیحات</span>
+              <textarea id="colDesc" name="colDesc" required></textarea>
+            </div>
           </div>
-          <div>
-            <span>آدرس</span>
-            <span
-              >آدرس : تهران - خیابان قائم مقام فراهانی - بالاتر از خیابان مطهری،
-              کوچه شهدا خبرنگار ( دوم سابق ) پلاک ۶، واحد ۲</span
-            >
-          </div>
-        </a>
-        <a href="mailto:example@gmail.com">
-          <div>
-            <img src="/images/email-icon.svg" alt="address" />
-          </div>
-          <div>
-            <span>ایمیل</span>
-            <span>example@gmail.com</span>
-          </div>
-        </a>
-        <a href="tel:00989390624049">
-          <div>
-            <img src="/images/phone-icon.svg" alt="address" />
-          </div>
-          <div>
-            <span>تلفن</span>
-            <span>۸۸۴۰۱۳۸۱-۶-۰۲۱۸۸۵۴۰۴۸</span>
-          </div>
-        </a>
-        <div class="about-contact-bg-left"></div>
-      </div>
+        </div>
 
-      <!-- ---------------section four--------------- -->
-      <div class="about-section-four">
-        <div id="mapTitle">موقعیت ما را پیدا کنید</div>
-        <div id="map"></div>
-      </div>
-    </main>
+        <!-- submit -->
+        <div
+          class="collabrate-submit-wrapper wow animate__animated animate__fadeInUp"
+        >
+          <input
+            id="col-home-submit-form"
+            name="colSubmitbtn"
+            type="submit"
+            value="ارسال اطلاعات"
+          />
+        </div>
+      </form>
+    </div>
 
     <!-- ------------------------------footer------------------------------ -->
     <footer id="footer" class="footer wow animate__animated animate__fadeInUp">
@@ -388,5 +327,23 @@
   <script src="/Wow.min.js"></script>
   <script>
     new WOW().init();
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        document.getElementById("headerTop").classList.add("header-in-scroll");
+      } else if (window.scrollY < 50) {
+        document
+          .getElementById("headerTop")
+          .classList.remove("header-in-scroll");
+      }
+    });
+  </script>
+  <script>
+    let newDiv = document.createElement("div");
+    document.getElementById("fusk").addEventListener("change", (e) => {
+      console.log(e.target.files[0].name);
+      newDiv.innerHTML = e.target.files[0].name;
+      document.getElementById("fileContainer").appendChild(newDiv);
+      document.getElementById("uploadFileButton").style.width = "30%";
+    });
   </script>
 </html>
