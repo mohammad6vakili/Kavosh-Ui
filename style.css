@@ -147,7 +147,7 @@ body {
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 15px;
+  border-radius: 30px;
   padding: 12px;
   transition: 0.25s;
   text-decoration: none;
@@ -228,7 +228,7 @@ body {
 /* ----------------------------section one------------------------ */
 .main-section-one {
   width: 100%;
-  height: 75vh;
+  height: 77vh;
   display: flex;
   align-items: center;
 }
@@ -240,39 +240,52 @@ body {
 /* right section */
 .main-section-one > div:nth-child(1) {
   width: 60%;
+  padding-top: 15px;
   border-radius: 0 0 0 20px;
   background-color: #ed7d23;
   color: white;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .main-section-one > div:nth-child(1) > div:nth-child(1) {
   font-weight: 700;
-  font-size: 50px;
-  margin-bottom: 5px;
+  font-size: 44px;
+  margin-bottom: 10px;
 }
 .main-section-one > div:nth-child(1) > div:nth-child(2) {
-  font-weight: 700;
-  font-size: 30px;
-  margin-bottom: 35px;
-}
-.main-section-one > div:nth-child(1) > div:nth-child(3) {
-  width: 80%;
+  width: 85%;
   margin-bottom: 30px;
   text-align: justify;
 }
-.main-section-one > div:nth-child(1) > div:nth-child(4) > button {
+.sec-one-right-list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+.sec-one-right-list>div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.sec-one-right-list>div>img{
+  margin-left: 10px;
+}
+.sec-one-right-about-btn {
   background-color: white;
   color: #ed7d23;
   border: none;
   cursor: pointer;
+  font-weight: 900;
   height: 50px;
   width: 220px;
   font-size: 18px;
-  border-radius: 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 12px 20px;
   transition: 0.25s;
 }
-.main-section-one > div:nth-child(1) > div:nth-child(4) > button:hover {
+.sec-one-right-about-btn:hover {
   background-color: #ed7d23 !important;
   color: white !important;
   border: 2px solid white !important;
@@ -291,12 +304,6 @@ body {
   right: -80px;
   position: absolute;
 }
-
-@media only screen and (max-width: 1150px) {
-  .main-section-one > div:nth-child(1) > div:nth-child(2) {
-    font-size: 24px;
-  }
-}
 @media only screen and (max-width: 1000px) {
   .main-section-one {
     flex-direction: column-reverse;
@@ -304,25 +311,31 @@ body {
     align-items: center !important;
   }
   .main-section-one > div:nth-child(1) {
-    padding: 80px 20px 20px 20px !important;
+    padding: 40px 20px !important;
     min-width: 300px;
     border-radius: 10px;
     text-align: center;
   }
-  .main-section-one > div:nth-child(1) > div:nth-child(3) {
+  .main-section-one > div:nth-child(1) > div:nth-child(2) {
     width: 100% !important;
     line-height: 2;
     font-weight: 100 !important;
     font-family: IranSans;
   }
-  .main-section-one > div:nth-child(2) {
-    justify-content: center;
-    align-items: center;
-    margin-bottom: -60px;
-  }
+  .sec-one-right-list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+.main-section-one > div:nth-child(2){
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
   .main-section-one > div:nth-child(2) > img {
-    width: 400px !important;
-    height: 400px !important;
+    width: 350px !important;
+    height: 350px !important;
     position: unset !important;
   }
 }
@@ -337,6 +350,12 @@ body {
     font-size: 20px;
   }
   @media only screen and (max-width: 430px) {
+    .sec-one-right-about-btn{
+      padding-right: 10px;
+      padding-left: 10px;
+      width: 100% !important;
+      font-size: 12px !important;
+    }
     .main-section-one > div:nth-child(2) > img {
       width: 300px !important;
       height: 270px !important;
@@ -899,6 +918,17 @@ body {
 .main-section-eight > div:nth-child(2) {
   width: 100%;
 }
+#customers-logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+}
+#customers-logo>img{
+  max-height: 150px !important;
+  z-index: 9999999 !important;
+}
 @media only screen and (max-width: 1000px) {
   .main-section-eight {
     margin-bottom: 10px !important;
@@ -1000,151 +1030,6 @@ body {
   }
   .main-section-nine > div > ul > li {
     font-size: 14px;
-  }
-}
-/* ------------------------–---section nine-------------------------- */
-.main-section-ten {
-  width: 100%;
-  padding: 0 40px;
-  display: flex;
-  justify-content: space-between;
-  margin: 80px 0;
-}
-.main-section-ten > div {
-  width: 48%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.main-section-ten > div:nth-child(1) > div {
-  font-weight: 700;
-  font-size: 26px;
-  margin-top: 10px;
-  line-height: 209.22%;
-  text-align: center;
-  color: #374354;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.main-section-ten > div:nth-child(2) {
-  align-items: flex-end;
-}
-.main-section-ten > div:nth-child(2) > div {
-  width: 450px;
-  height: 100%;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: linear-gradient(
-    218.96deg,
-    rgba(236, 236, 236, 0.53) 0%,
-    rgba(245, 245, 245, 0.17) 100%
-  );
-  border: 1px solid #ffffff;
-  box-shadow: -1px 1px 20px rgba(0, 0, 0, 0.15);
-  border-radius: 40px;
-}
-.main-section-ten > div:nth-child(2) > div > div:nth-child(1) {
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 209.22%;
-  text-align: right;
-  color: #374354;
-  margin-bottom: 35px;
-}
-.form-field-mv {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 25px;
-}
-.form-field-mv > input {
-  background: #ffffff;
-  border: 1px solid rgba(213, 213, 213, 0.72);
-  box-shadow: 0.5px 4px 10px rgba(117, 117, 117, 0.35);
-  border-radius: 10px;
-  outline: none;
-  padding: 0 10px;
-  height: 50px;
-  margin-top: 5px;
-  transition: 0.3s;
-}
-.form-field-mv > input:focus {
-  border: 1px solid #ed7d23 !important;
-  box-shadow: 0.5px 4px 10px rgba(236, 131, 44, 0.35);
-}
-.filed-mv-last > input {
-  height: 100px !important;
-}
-.main-section-ten > div button {
-  width: 100% !important;
-  border: none !important;
-  background: #ed7d23;
-  border-radius: 10px;
-  height: 50px;
-  margin-bottom: 10px;
-  margin-top: auto;
-  color: white;
-  font-weight: 700;
-  font-size: 18px;
-  cursor: pointer;
-  transition: 0.25s;
-}
-.main-section-ten > div button:hover {
-  color: #ed7d23 !important;
-  background-color: white !important;
-  border: 1.5px solid #ed7d23 !important;
-}
-@media only screen and (max-width: 1300px) {
-  .main-section-ten > div:nth-child(1) {
-    width: 60%;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .main-section-ten {
-    flex-direction: column !important;
-  }
-  .main-section-ten > div {
-    width: 100% !important;
-    align-items: center !important;
-  }
-  .main-section-ten > div:nth-child(1) {
-    margin-bottom: 50px;
-  }
-  .main-section-ten > div:nth-child(1) img {
-    width: 90%;
-  }
-}
-@media only screen and (max-width: 800px) {
-  .main-section-ten > div:nth-child(1) > div {
-    font-size: 22px;
-  }
-}
-@media only screen and (max-width: 460px) {
-  .main-section-ten {
-    margin: 100px 0 50px 0 !important;
-  }
-  .main-section-ten > div:nth-child(2) > div {
-    width: 350px;
-  }
-  .main-section-ten > div:nth-child(2) > div > div:nth-child(1) {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  .form-field-mv {
-    margin-bottom: 15px;
-  }
-  .form-field-mv > span {
-    font-size: 12px !important;
-  }
-  .form-field-mv > input {
-    height: 40px;
-  }
-}
-@media only screen and (max-width: 360px) {
-  .main-section-ten > div:nth-child(2) > div {
-    width: 310px;
   }
 }
 /* ---------------------------------------------------------- footer ----------------------------------------------------- */
@@ -1268,7 +1153,6 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  background: #f3f3f3;
   border-radius: 10px;
 }
 .footer > div:nth-child(4) > div:nth-child(2) > button {
@@ -1611,6 +1495,7 @@ body {
   color: #374354;
   margin-bottom: 10px;
 }
+.about-section-three > a > div:nth-child(2) > a ,
 .about-section-three > a > div:nth-child(2) > span:nth-child(2) {
   font-weight: 100;
   font-size: 13px;
