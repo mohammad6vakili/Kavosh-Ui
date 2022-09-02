@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>رایان پرداز کاوش</title>
+</head>
+
+<body>
+    <!-- -------------------------------hamburger menu----------------------------- -->
+    <div id="hamMenu" class="ham-menu">
+        <div>
+            <a class="header-link" href="/"> خانه </a>
+            <a class="header-link" href="#products">محصولات</a>
+            <a class="header-link" href="#services">خدمات</a>
+            <a class="header-link" href="#consulting">آموزش و مشاوره</a>
+            <a class="header-link" href="#techs">تکنولوژی ها</a>
+            <a class="header-link" href="#customers">معرفی مشتریان</a>
+            <a class="header-link" href="/about"> درباره ما </a>
+            <a class="header-link" href="/complaint"> ثبت شکایات و انتقادات </a>
+        </div>
+        <a class="header-collaborate-ham" href="/collaborate">شروع همکاری با رایان پرداز کاوش</a>
+    </div>
+    <!-- -------------------------------header----------------------------- -->
+    <header id="header" class="header animate__animated animate__fadeInDown">
+        <!-- header top  -->
+        <div id="headerTop">
+            <div>
+                <a href="#">
+                    گزارش کامل رویدادها و اخبار رایان پرداز کاوش را ببینید
+                </a>
+                <img src="/images/header_arrow.png" alt="arrow" />
+            </div>
+            <div>
+                <a class="header-link" href="/"> خانه </a>
+                <a class="header-link" href="/about"> درباره ما </a>
+                <a class="header-link" href="/complaint"> ثبت شکایات و انتقادات </a>
+            </div>
+        </div>
+        <!-- header bottom  -->
+        <div>
+            <a href="/">
+                <img id="kavoshLogo" src="images/realLogo.jpg" alt="logo" />
+            </a>
+            <div>
+                <a class="header-link" href="#products">محصولات</a>
+                <a class="header-link" href="#services">خدمات</a>
+                <a class="header-link" href="#consulting">آموزش و مشاوره</a>
+                <a class="header-link" href="#techs">تکنولوژی ها</a>
+                <a class="header-link" href="#customers">معرفی مشتریان</a>
+            </div>
+            <div>
+                <a class="header-collaborate" href="/collaborate">شروع همکاری با رایان پرداز کاوش</a>
+            </div>
+            <div>
+                <button id="hamButton"><img src="/images/ham.svg" alt="mobile menu"></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- -------------------------------collabrate----------------------------- -->
+    <div class="collabrate">
+        <form method="post" role="form" class="collabrate-container">
+            <div class="animate__animated animate__fadeIn">
+                ثبت شکایات و انتقادات
+            </div>
+            <div class="animate__animated animate__fadeIn">
+                رایان پرداز کاوش بر پایه احترام به نظرات، انتقادات و انتظارات مشتریان فعالیت می نماید. لذا مشتریان می
+                توانند در این قسمت
+                نسبت به درج و ثبت شکایات، انتقادات و نظرات خود اقدام فرمایند.
+                <br>
+                رایان پرداز کاوش به عنوان مجری سیستم های ایزو ۱۰۰۰۴ (رضایت مندی مشتریان) و ایزو ۱۰۰۰۲ (رسیدگی به شکایت
+                مشتریان) به نظرات
+                مشتریان توجه ویژه داشته و آماده شنیدن و پاسخگویی به شکایات و نظرات مشتریان به منظور دستیابی به بهبود
+                مستمر و تعالی
+                سازمانی می باشد.
+                <span style="color: #ed7d23;font-weight: 900;">صمیمانه مشتاق گفتگو با شما هستیم.</span>
+            </div>
+            <!-- ---------------section three--------------- -->
+            <div class="about-section-three">
+                <img src="/images/services-bg.svg" alt="background" />
+                <div class="about-contact-bg-right"></div>
+                <a class="comCom" class="wow animate__animated animate__fadeInUp" href="mailto:support@rpkavosh.ir">
+                    <div>
+                        <img src="/images/email-icon.svg" alt="address" />
+                    </div>
+                    <div>
+                        <span>پشتیبانی</span>
+                        <span>support@rpkavosh.ir</span>
+                    </div>
+                </a>
+                <a class="comCom" class="wow animate__animated animate__fadeInLeft" href="tel:+982188580480">
+                    <div>
+                        <img src="/images/phone-icon.svg" alt="address" />
+                    </div>
+                    <div>
+                        <span>تلفن</span>
+                        <span>
+                            ۰۲۱-۸۸۵۸۰۴۸۰
+                        </span>
+                    </div>
+                </a>
+                <div class="about-contact-bg-left"></div>
+            </div>
+            <!-- personal section -->
+            <div class="collabrate-feilds-wrapper wow animate__animated animate__fadeInUp">
+                <div class="collabrate-feilds-wrapper-label"></div>
+                <div class="collabrate-feilds-wrapper-title">فرم ثبت اطلاعات</div>
+                <div class="collabrate-fileds-container">
+                    <!-- name -->
+                    <div class="collabrate-form-field collabrate-form-field-50">
+                        <span>نام و نام خانوادگی</span>
+                        <input id="comName" name="comName" required type="text" />
+                    </div>
+                    <!-- name -->
+                    <div class="collabrate-form-field collabrate-form-field-50">
+                        <span>نام شرکت / سازمان</span>
+                        <input id="comOrg" name="comOrg" required type="text" />
+                    </div>
+                    <!-- number -->
+                    <div class="collabrate-form-field collabrate-form-field-50">
+                        <span>شماره موبایل</span>
+                        <input id="comMobile" name="comMobile" required type="tel" />
+                    </div>
+                    <!-- number -->
+                    <div class="collabrate-form-field collabrate-form-field-50">
+                        <span>شماره تماس</span>
+                        <input id="comNumber" name="comNumber" required type="tel" />
+                    </div>
+                    <!-- email -->
+                    <div class="collabrate-form-field collabrate-form-field-50">
+                        <span>ایمیل</span>
+                        <input id="comEmail" name="comEmail" required type="email" />
+                    </div>
+                    <!-- desc -->
+                    <div class="collabrate-form-field collabrate-form-field-100">
+                        <span>متن شکایت / انتقاد / انتظار</span>
+                        <textarea id="comDesc" name="comDesc" required></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- submit -->
+            <div class="collabrate-submit-wrapper wow animate__animated animate__fadeInUp">
+                <input id="com-home-submit-form" name="comSubmitbtn" type="submit" value="ارسال اطلاعات" />
+            </div>
+        </form>
+    </div>
+
+    <!-- ------------------------------footer------------------------------ -->
+    <footer id="footer" class="footer wow animate__animated animate__fadeInUp">
+        <!-- section one -->
+        <div>
+            <a class="header-link" href="/"> خانه </a>
+            <a class="header-link" href="/about"> درباره ما </a>
+            <a class="header-link" href="/complaint"> ثبت شکایات و انتقادات </a>
+        </div>
+        <!-- section two -->
+        <div>
+            <div>
+                <div>محصولات</div>
+                <a href="#products">سامانه جامع اعتبارات بانکی</a>
+                <a href="#products">سامانه جامع و یکپارچه تدارکات بانکی</a>
+                <a href="#products">سیستم جامع اداری</a>
+                <a href="#products">سیستم پرسنلی</a>
+                <a href="#products">بیشتر</a>
+            </div>
+            <div>
+                <div>خدمات</div>
+                <a href="#services">تولید، طراحی، نصب و راه اندازی</a>
+                <a href="#services">خدمات مشاوره ای و تهیه rep </a>
+                <a href="#services">طراحی، اجرا، نظارت و مشاوره </a>
+            </div>
+            <div>
+                <div>آموزش و مشاوره</div>
+                <a href="#consulting">مشاوره تخصصی</a>
+                <a href="#consulting">بسته های آموزشی</a>
+                <a href="#consulting">آموزش های حضوری</a>
+                <a href="#consulting">آموزش های غیر حضوری</a>
+            </div>
+            <div>
+                <div>تکنولوژی ها</div>
+                <a href="#techs">.Net</a>
+                <a href="#techs">Java</a>
+                <a href="#techs">Node</a>
+                <a href="#techs">SQL</a>
+                <a href="#techs">Big Data</a>
+            </div>
+            <div>
+                <div>معرفی مشتریان</div>
+                <a href="#customers">بانک ملت</a>
+                <a href="#customers">بانک ملی</a>
+                <a href="#customers">بانک تجارت</a>
+                <a href="#customers">بانک مسکن</a>
+                <a href="#customers">بیشتر</a>
+            </div>
+        </div>
+        <!-- section three -->
+        <div>
+            <a href="/">
+                <img src="/images/logo.png" alt="kavosh">
+            </a>
+            <div>
+                آدرس : تهران - خیابان قائم مقام فراهانی - بالاتر از خیابان مطهری، کوچه شهدا خبرنگار ( دوم سابق ) پلاک ۶،
+                واحد ۲
+            </div>
+            <div>
+                <a style="text-decoration: none;color: #374354;" href="tel:+982188580480">
+                    تلفن : ۰۲۱۸۸۵۸۰۴۸۰
+                </a>
+            </div>
+        </div>
+        <!-- section four -->
+        <div>
+            <div>
+                <button id="backToTop"><img src="/images/topArrow.png" alt="top to kavosh"></button>
+                <span>برگشت به بالا</span>
+            </div>
+            <div>
+            </div>
+            <div>
+                <a href="#">
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_235_401)">
+                            <path
+                                d="M14.2891 2.05664H5.95573C3.65454 2.05664 1.78906 3.92212 1.78906 6.22331V14.5566C1.78906 16.8578 3.65454 18.7233 5.95573 18.7233H14.2891C16.5902 18.7233 18.4557 16.8578 18.4557 14.5566V6.22331C18.4557 3.92212 16.5902 2.05664 14.2891 2.05664Z"
+                                stroke="#E3F9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M13.4548 9.86588C13.5577 10.5594 13.4392 11.2677 13.1163 11.8901C12.7934 12.5124 12.2825 13.0171 11.6562 13.3323C11.0299 13.6475 10.3202 13.7572 9.62799 13.6458C8.93577 13.5344 8.2963 13.2076 7.80053 12.7118C7.30477 12.2161 6.97794 11.5766 6.86656 10.8844C6.75517 10.1922 6.86489 9.48246 7.18011 8.85619C7.49532 8.22992 7.99999 7.71899 8.62232 7.39608C9.24465 7.07316 9.95296 6.9547 10.6465 7.05754C11.3539 7.16245 12.0089 7.4921 12.5146 7.9978C13.0203 8.5035 13.3499 9.15844 13.4548 9.86588Z"
+                                stroke="#E3F9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <ellipse cx="14.7034" cy="5.8042" rx="1.2503" ry="1.25" fill="#E3F9FF" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_235_401">
+                                <rect width="20" height="20" fill="white" transform="translate(0.121094 0.388672)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.3418 2.30769C19.5918 2.76923 18.8418 2.92308 17.9668 3.07692C18.8418 2.46154 19.4668 1.53846 19.7168 0.307692C18.9668 0.923077 18.0918 1.23077 17.0918 1.53846C16.3418 0.615385 15.2168 0 14.0918 0C11.9668 0 10.0918 2.30769 10.0918 5.07692C10.0918 5.53846 10.0918 5.84615 10.2168 6.15385C6.8418 6 3.7168 4 1.7168 0.923077C1.3418 1.69231 1.2168 2.46154 1.2168 3.53846C1.2168 5.23077 1.9668 6.76923 3.0918 7.69231C2.4668 7.69231 1.8418 7.38462 1.2168 7.07692C1.2168 9.53846 2.5918 11.5385 4.4668 12C4.0918 12.1538 3.7168 12.1538 3.3418 12.1538C3.0918 12.1538 2.8418 12.1538 2.5918 12C3.0918 14 4.5918 15.5385 6.4668 15.5385C5.0918 16.9231 3.3418 17.6923 1.3418 17.6923C0.966797 17.6923 0.716797 17.6923 0.341797 17.6923C2.2168 19.0769 4.3418 20 6.5918 20C14.0918 20 18.2168 12.3077 18.2168 5.69231C18.2168 5.53846 18.2168 5.23077 18.2168 5.07692C19.0918 4.30769 19.8418 3.38462 20.3418 2.30769Z"
+                            fill="#E3F9FF" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/company/rpkavosh/" target="_blank">
+                    <img src="/images/linkedin.png" alt="linkedin" style="width:20px;">
+                </a>
+                <a href="https://www.facebook.com/rpkavosh/" target="_blank">
+                    <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.32522 18.0005L3.3 10.1255H0V6.75049H3.3V4.50049C3.3 1.46389 5.13866 0.000488281 7.78732 0.000488281C9.05605 0.000488281 10.1465 0.097092 10.4642 0.14027V3.31369L8.62726 3.31455C7.18677 3.31455 6.90786 4.0146 6.90786 5.04188V6.75049H11L9.9 10.1255H6.90785V18.0005H3.32522Z"
+                            fill="#E3F9FF" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
+<script src="/script.js"></script>
+<script src="/Wow.min.js"></script>
+<script>
+    new WOW().init();
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+            document.getElementById("headerTop").classList.add("header-in-scroll");
+        } else if (window.scrollY < 50) {
+            document
+                .getElementById("headerTop")
+                .classList.remove("header-in-scroll");
+        }
+    });
+</script>
+<script>
+    let newDiv = document.createElement("div");
+    document.getElementById("fusk").addEventListener("change", (e) => {
+        console.log(e.target.files[0].name);
+        newDiv.innerHTML = e.target.files[0].name;
+        document.getElementById("fileContainer").appendChild(newDiv);
+        document.getElementById("uploadFileButton").style.width = "30%";
+    });
+</script>
+
+</html>
